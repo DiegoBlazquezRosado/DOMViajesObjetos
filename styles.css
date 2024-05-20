@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#bienvenidos {
+    width: 100%;
+}
+
+#bienvenidos img{
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+#recomendados {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.card {
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.3333%; */
+    flex: 0 0 33.3333%;
+}
+
+.card img {
+    width: 100%;
+} 
+
+.card h3, p {
+    padding: 5px;
+}
+
+#destinos select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgrey;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1200px){
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .card {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .card {
+        flex: 0 0 100%;
+    }
+}
