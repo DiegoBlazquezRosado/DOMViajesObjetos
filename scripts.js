@@ -48,6 +48,8 @@ const dibujarFotoGrande = (idButton) => {
         if (divCanvas.innerTML !== "") {
             divCanvas.innerHTML = "";
         }
+        divCanvas.classList.remove('esconder');
+
         const titleGrande = document.createElement('h3');
         titleGrande.innerText = found.title;
         fragment.append(titleGrande);
